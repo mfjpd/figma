@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #b9adad;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: transparent;
+    border-bottom: none;
+}
+
+header nav a {
+    margin-left: 10px;
+    text-decoration: none;
+    background: #f0a7b4;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 14px;
+}
+
+header nav a:hover {
+    filter: brightness(0.95);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    background: #b3a7a7;
+}
+
+.hero-left img,
+.hero-right img {
+    width: 180px;
+    border-radius: 6px;
+}
+
+.hero-text {
+    text-align: center;
+    color: white;
+}
+
+.primary-btn {
+    margin-top: 15px;
+    padding: 6px 12px;
+    background: #f0a7b4;
+    border: none;
+    color: white;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.primary-btn:hover {
+    filter: brightness(0.95);
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px 40px 20px;
+}
+
+.card {
+    width: 250px;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+}
+
+/* two-part card */
+.card-color {
+    height: 150px;
+}
+
+.card-body {
+    background: #fff;
+    color: #333;
+    text-align: center;
+    padding: 14px 12px 12px;
+}
+
+.card-body h3 {
+    color: #e85a71;
+    margin-bottom: 6px;
+}
+
+.more {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 4px 10px;
+    color: #fff;
+}
+
+.more--about { background: #3a3a3a; }
+.more--projects { background: #e85a71; }
+
+/* removed .card button since cards are links now */
+
+/* Color classes */
+.red { background: #d62828; }
+.black { background: #3a3a3a; }
+.yellow { background: #fcbf49; }
+.green { background: #4caf50; }
+.dark { background: #1b1b1b; }
+.blue { background: #3b3bfb; }
+.orange { background: #f77f00; }
+
+/* apply colors to the color block when used inside a card */
+.card.red .card-color { background: #d62828; }
+.card.black .card-color { background: #3a3a3a; }
+.card.yellow .card-color { background: #fcbf49; }
+.card.green .card-color { background: #4caf50; }
+.card.dark .card-color { background: #1b1b1b; }
+.card.blue .card-color { background: #3b3bfb; }
+.card.orange .card-color { background: #f77f00; }
+
+/* Projects Section */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    background: #8b8484;
+    padding: 40px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px;
+    background: #ffffff;
+}
+
+.contact form {
+    max-width: 700px;
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-quick {
+    padding-top: 20px;
+}
+
+.contact .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font: inherit;
+}
